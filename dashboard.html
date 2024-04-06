@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2/dist/tailwind.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/static/style1.css">
+
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+    <header>
+        <nav class="bg-blue-700 py-2 p-12 fixed w-full top-0 z-50 lg:flex lg:items-center lg:justify-end lg:text-lg ">
+            <!-- Date and Time -->
+            <div class="text-white mr-4">
+                <span id="currentDateTime"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="sidebar bg-blue-600">
+        <br><br><br>
+        <div class="sidebar-item" id="dashboardLink" onclick="showContent('dashboard')">Dashboard</div>
+        <div class="sidebar-item" id="doctorsLink" onclick="showContent('doctors')">Doctors</div>
+        <div class="sidebar-item" id="supportLink" onclick="showContent('support')">Support</div>
+    </div>
+    <div id="dashboard" class="content">
+        <br><br><br>
+        <h1 class="text-3xl  font-bold mb-4 text-center">Dashboard</h1>
+        <div class="container">
+            <!-- patient-00A1-->
+            <div class="cardward bg-blue-600"  >
+                <!-- onclick="toggleAvailabilitypatient(0)" -->
+                <h3 class="text-3xl  font-bold mb-4 text-center">PATIENT-00A1</h3>
+                <!-- <img src="gward.jpeg" alt="00A1 Image" style="height:300px;"> -->
+                <div class="availabilitypatient">
+                    <button id="availabilitypatientBtn0" class="availabilitypatient-btn">Patient Out</button>
+                </div>
+                <div class="check">
+                    <button id="checkbtn0" class="check-btn bg-blue-600" onclick="showContent('patient0')">check status</button>
+                </div>
+                
+            </div>
+    
+            <!-- patient-00A2-->
+            <div class="cardward bg-blue-600" >
+                <h3 class="text-3xl  font-bold mb-4 text-center">PATIENT-00A2</h3>
+                <!-- <img src="gward.jpeg" alt="00A2 Image" style="height:300px;" > -->
+                <div class="availabilitypatient">
+                    <button id="availabilitypatientBtn1" class="availabilitypatient-btn">Patient Out</button>
+                </div>
+                <div class="check">
+                    <button id="checkbtn0" class="check-btn bg-blue-600" onclick="showContent('patient1')">check status</button>
+                </div>
+            </div>
+    
+            <!-- patient-00A3 -->
+            <div class="cardward bg-blue-600" >
+                <h3 class="text-3xl  font-bold mb-4 text-center">PATIENT-00A3</h3>
+                <!-- <img src="gward.jpeg" alt="00A3 Image" style="height:300px;"> -->
+                <div class="availabilitypatient">
+                    <button id="availabilitypatientBtn2" class="availabilitypatient-btn">Patient Out</button>
+                </div>
+                <div class="check">
+                    <button id="checkbtn0" class="check-btn bg-blue-600" onclick="showContent('patient2')">check status</button>
+                </div>
+            </div>
+    
+            <!-- patient-00A4-->
+            <div class="cardward bg-blue-600" >
+                <h3 class="text-3xl  font-bold mb-4 text-center">PATIENT-00A4</h3>
+                <!-- <img src="gward.jpeg" alt="00A4 Image" style="height:300px;"> -->
+                <div class="availabilitypatient">
+                    <button id="availabilitypatientBtn3" class="availabilitypatient-btn">Patient Out</button>
+                </div>
+                <div class="check">
+                    <button id="checkbtn0" class="check-btn bg-blue-600" onclick="showContent('patient3')">check status</button>
+                </div>
+
+            </div>
+            <!-- patient-00A5-->
+            <div class="cardward bg-blue-600" >
+                <h3 class="text-3xl  font-bold mb-4 text-center">PATIENT-00A5</h3>
+                <!-- <img src="gward.jpeg" alt="00A5 Image" style="height:300px;"> -->
+                <div class="availabilitypatient">
+                    <button id="availabilitypatientBtn4" class="availabilitypatient-btn">Patient Out</button>
+                </div>
+                <div class="check">
+                    <button id="checkbtn0" class="check-btn bg-blue-600" onclick="showContent('patient4')">check status</button>
+                </div>
+
+            </div>
+            <!--patient-00A6-->
+            <div class="cardward bg-blue-600" >
+                <h3 class="text-3xl  font-bold mb-4 text-center" >PATIENT-00A6</h3>
+                <div class="availabilitypatient">
+                    <button id="availabilitypatientBtn5" class="availabilitypatient-btn">Patient Out</button>
+                </div>
+                <div class="check">
+                    <button id="checkbtn0" class="check-btn bg-blue-600" onclick="showContent('patient5')">check status</button>
+                </div>
+                <!-- <img src="gward.jpeg" alt="00A6 Image" style="height:300px;"> -->
+            
+            </div>
+        </div>
+    </div>
+    <div id="patient0" class="content" style="display: none;">
+        <!-- Content for patient 0 -->
+        <br><br><br>
+        <div class="return">
+            <button onclick="showContent('dashboard')" ><-</button>
+        </div>
+        <h1 class="text-3xl  font-bold mb-4 text-center">NAME:JENNY</h1>
+        <div class="conatiner" style="display: flex; flex-direction:row;">
+            <div class="card" >
+                <img src="/static/heartbeat.jpeg" style="height: 200px;">
+                <div class="availability">
+                    <button id="hbBtn0" class="availability-btn">80BPm</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/resp1.png" style="height: 200px;" >
+                <div class="availability">
+                    <button id="spBtn0" class="availability-btn">12 breaths/min</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/temp.jpg" style="height: 200px;" >
+                <div class="availability">
+                    <button id="tempBtn0" class="availability-btn">97 F</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/bp.png" style="height: 200px;" >
+                <div class="availability">
+                    <button id="bpBtn0" class="availability-btn">120/80mmHg</button>
+                </div>
+            </div>
+        </div>
+        <div class="availabilitypatient">
+            <button id="availabilityapatientBtn0" class="availabilitypatient-btn"onclick="toggleAvailabilitypatient(0)">Patient Out</button>
+        </div>
+
+    </div>
+    
+    <div id="patient1" class="content" style="display: none;">
+        <!-- Content for patient 1 -->
+        <br><br><br>
+        <div class="return">
+            <button onclick="showContent('dashboard')" ><-</button>
+        </div>
+        <h1 class="text-3xl  font-bold mb-4 text-center">NAME:JENNY</h1>
+        <div class="conatiner" style="display: flex; flex-direction:row;">
+            <div class="card" >
+                <img src="/static/heartbeat.jpeg" style="height: 200px;">
+                <div class="availability">
+                    <button id="hbBtn1" class="availability-btn">80bpm</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/resp1.png" style="height: 200px;" >
+                <div class="availability">
+                    <button id="spBtn1" class="availability-btn">12 breaths/min</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/temp.jpg" style="height: 200px;" >
+                <div class="availability">
+                    <button id="tempBtn1" class="availability-btn">97 F</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/bp.png" style="height: 200px;" >
+                <div class="availability">
+                    <button id="bpBtn0" class="availability-btn">120/80mmHg</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="availabilitypatient">
+            <button id="availabilityapatientBtn1" class="availabilitypatient-btn"onclick="toggleAvailabilitypatient(1)">Patient Out</button>
+        </div>
+
+    </div>
+    <div id="patient2" class="content" style="display: none;">
+        <!-- Content for patient 2 -->
+        <br><br><br>
+        <div class="return">
+            <button onclick="showContent('dashboard')" ><-</button>
+        </div>
+        <h1 class="text-3xl  font-bold mb-4 text-center">NAME:JENNY</h1>
+        <div class="conatiner" style="display: flex; flex-direction:row;">
+            <div class="card" >
+                <img src="/static/heartbeat.jpeg" style="height: 200px;">
+                <div class="availability">
+                    <button id="hbBtn2" class="availability-btn">80bpm</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/resp1.png" style="height: 200px;" >
+                <div class="availability">
+                    <button id="spBtn2" class="availability-btn">12 breaths/min</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/temp.jpg" style="height: 200px;" >
+                <div class="availability">
+                    <button id="tempBtn2" class="availability-btn">97 F</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/bp.png" style="height: 200px;" >
+                <div class="availability">
+                    <button id="bpBtn2" class="availability-btn">120/80mmHg</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="availabilitypatient">
+            <button id="availabilityapatientBtn2" class="availabilitypatient-btn"onclick="toggleAvailabilitypatient(2)">Patient Out</button>
+        </div>
+
+    </div>
+    <div id="patient3" class="content" style="display: none;">
+        <!-- Content for patient 3 -->
+        <br><br><br>
+        <div class="return">
+            <button onclick="showContent('dashboard')" ><-</button>
+        </div>
+        <h1 class="text-3xl  font-bold mb-4 text-center">NAME:JENNY</h1>
+        <div class="conatiner" style="display: flex; flex-direction:row;">
+            <div class="card" >
+                <img src="/static/heartbeat.jpeg" style="height: 200px;">
+                <div class="availability">
+                    <button id="hbBtn3" class="availability-btn">80bpm</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/resp1.png" style="height: 200px;" >
+                <div class="availability">
+                    <button id="spBtn3" class="availability-btn">12 breaths/min</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/temp.jpg" style="height: 200px;" >
+                <div class="availability">
+                    <button id="tempBtn3" class="availability-btn">97 F</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/bp.png" style="height: 200px;" >
+                <div class="availability">
+                    <button id="bpBtn3" class="availability-btn">120/80mmHg</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="availabilitypatient">
+            <button id="availabilityapatientBtn3" class="availabilitypatient-btn"onclick="toggleAvailabilitypatient(3)">Patient Out</button>
+        </div>
+
+    </div>
+    <div id="patient4" class="content" style="display: none;">
+        <!-- Content for patient 4 -->
+        <br><br><br>
+        <div class="return">
+            <button onclick="showContent('dashboard')" ><-</button>
+        </div>
+        <h1 class="text-3xl  font-bold mb-4 text-center">NAME:JENNY</h1>
+        <div class="conatiner" style="display: flex; flex-direction:row;">
+            <div class="card" >
+                <img src="/static/heartbeat.jpeg" style="height: 200px;">
+                <div class="availability">
+                    <button id="hbBtn4" class="availability-btn">80bpm</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/resp1.png" style="height: 200px;" >
+                <div class="availability">
+                    <button id="spBtn4" class="availability-btn">12 breaths/min</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/temp.jpg" style="height: 200px;" >
+                <div class="availability">
+                    <button id="tempBtn4" class="availability-btn">97 F</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/bp.png" style="height: 200px;" >
+                <div class="availability">
+                    <button id="bpBtn4" class="availability-btn">120/80mmHg</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="availabilitypatient">
+            <button id="availabilityapatientBtn4" class="availabilitypatient-btn"onclick="toggleAvailabilitypatient(4)">Patient Out</button>
+        </div>
+
+    </div>
+    <div id="patient5" class="content" style="display: none;">
+        <!-- Content for patient 5 -->
+        <br><br><br>
+        <div class="return">
+            <button onclick="showContent('dashboard')" ><-</button>
+        </div>
+        <h1 class="text-3xl  font-bold mb-4 text-center">NAME:JENNY</h1>
+        <div class="conatiner" style="display: flex; flex-direction:row;">
+            <div class="card" >
+                <img src="/static/heartbeat.jpeg" style="height: 200px;">
+                <div class="availability">
+                    <button id="hbBtn5" class="availability-btn">80bpm</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/resp1.png" style="height: 200px;" >
+                <div class="availability">
+                    <button id="spBtn5" class="availability-btn">12 breaths/min</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/temp.jpg" style="height: 200px;" >
+                <div class="availability">
+                    <button id="tempBtn5" class="availability-btn">97 F</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/static/bp.png" style="height: 200px;" >
+                <div class="availability">
+                    <button id="bpBtn5" class="availability-btn">120/80mmHg</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="availabilitypatient">
+            <button id="availabilityapatientBtn5" class="availabilitypatient-btn"onclick="toggleAvailabilitypatient(5)">Patient Out</button>
+        </div>
+
+    </div>
+    <div id="doctors" class="content" style="display: none;">
+        <br><br><br>
+        <h1 class="text-3xl font-bold mb-4 text-center">Doctors</h1>
+        <div class="container">
+            <!-- Doctor Card 1 -->
+            <div class="card" onclick="toggleAvailability(0)">
+                <img src="/static/doc1.jpg" alt="Doctor Image" style="height:300px;">
+                <div class="card-content">
+                    <h3>Dr. James</h3>
+                    <p>Cardiologist</p>
+                    <div class="availability">
+                        <button id="availabilityBtn0" class="availability-btn">Available</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Doctor Card 2 -->
+            <div class="card" onclick="toggleAvailability(1)">
+                <img src="/static/doc2.jpeg" alt="Doctor Image" style="height:300px;">
+                
+
+                <div class="card-content">
+                    <h3>Dr. Christopher</h3>
+                    <p>Neurologist</p>
+                    <div class="availability">
+                        <button id="availabilityBtn1" class="availability-btn">Available</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Doctor Card 3 -->
+            <div class="card" onclick="toggleAvailability(2)">
+                <img src="/static/doc3.png" alt="Doctor Image" style="height:300px;">
+                <div class="card-content">
+                    <h3>Dr. Anabel</h3>
+                    <p>Pediatrician</p>
+                    <div class="availability">
+                        <button id="availabilityBtn2" class="availability-btn">Available</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Doctor Card 4 -->
+            <div class="card" onclick="toggleAvailability(3)">
+                <img src="/static/doc4.jpg" alt="Doctor Image" style="height:300px;">
+                <div class="card-content">
+                    <h3>Dr. Emily</h3>
+                    <p>Dermatologist</p>
+                    <div class="availability">
+                        <button id="availabilityBtn3" class="availability-btn">Available</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="support" class="content" style="display: none;">
+        <br><br><br>
+        <h1 class="text-3xl  font-bold mb-4 text-center">Support Content</h1>
+        <p>This is the Support content area.</p>
+    </div>
+
+<script>
+    // Array to hold availability status of doctors
+    var availabilityStatus = [true, true, true, true];
+
+    // Function to toggle availability status
+    function toggleAvailability(index) {
+        availabilityStatus[index] = !availabilityStatus[index];
+        updateAvailabilityButton(index);
+    }
+
+    // Function to update availability button text and color
+    function updateAvailabilityButton(index) {
+        var button = document.getElementById('availabilityBtn' + index);
+        if (availabilityStatus[index]) {
+            button.textContent = "Available";
+            button.classList.remove("not-available");
+            button.classList.add("available");
+        } else {
+            button.textContent = "Not Available";
+            button.classList.remove("available");
+            button.classList.add("not-available");
+        }
+    }
+    var availabilitypatientStatus = [true, true, true, true,true,true];
+    function toggleAvailabilitypatient(index) {
+        availabilitypatientStatus[index] = !availabilitypatientStatus[index];
+        updateAvailabilitypatientButton(index);
+    }
+
+    // Function to update availability button text and color
+    function updateAvailabilitypatientButton(index) {
+    var button = document.getElementById('availabilitypatientBtn' + index);
+    var button1 = document.getElementById('availabilityapatientBtn' + index);
+    if (availabilitypatientStatus[index]) {
+        button.textContent = "Patient Out";
+        button.classList.remove("Patient2");
+        button.classList.add("Patient1");
+    } else {
+        button.textContent = "Patient In";
+        button.classList.remove("Patient1");
+        button.classList.add("Patient2");
+    }
+    if (availabilitypatientStatus[index]) {
+        button1.textContent = "Patient Out";
+        button1.classList.remove("Patient2");
+        button1.classList.add("Patient1");
+    } else {
+        button1.textContent = "Patient In";
+        button1.classList.remove("Patient1");
+        button1.classList.add("Patient2");
+    }
+}
+
+
+    // Function to show content based on clicked link
+    function showContent(contentId) {
+        var contentElements = document.getElementsByClassName('content');
+        for (var i = 0; i < contentElements.length; i++) {
+            contentElements[i].style.display = 'none';
+        }
+        var selectedContent = document.getElementById(contentId);
+        selectedContent.style.display = 'block';
+
+        var sidebarItems = document.querySelectorAll('.sidebar-item');
+        for (var i = 0; i < sidebarItems.length; i++) {
+            sidebarItems[i].classList.remove('active');
+        }
+        
+        var clickedLink = document.getElementById(contentId + 'Link');
+        clickedLink.classList.add('active');
+    }
+
+    function showContenta(index) {
+        // Hide all patient content elements
+        var patientContent = document.querySelectorAll('.patient-content');
+        patientContent.forEach(function(element) {
+            element.style.display = 'none';
+        });
+
+        // Show content with corresponding ID
+        var patientId = 'patient' + index;
+        var content = document.getElementById(patientId);
+        if (content) {
+            content.style.display = 'block';
+        }
+    }
+
+    // Function to update date and time
+    function updateDateTime() {
+        var now = new Date();
+        var dateString = now.toLocaleDateString('en-US');
+        var TimeString = now.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }) ;
+        document.getElementById('currentDateTime').textContent = dateString + "     " + TimeString;
+
+
+    }
+
+    // Update date and time initially and then every second
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+
+
+
+</script>
+
+</body>
+</html>
