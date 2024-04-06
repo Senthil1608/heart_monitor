@@ -1,0 +1,315 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+ 
+    padding: 0px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+.sidebar {
+    cursor: pointer; /* Add pointer cursor to indicate clickable */
+}
+.sidebar-item {
+    width: 100%;
+    text-align: center;
+    align-items:flex-start;
+    font-size: 20px;
+    padding: 10px;
+    color:  #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sidebar-item.active {
+    background-color: #fff; /* Set background to white */
+    color: #1e40af; /* Set text color to blue */
+    text-align: center;
+    align-items:flex-start;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.content {
+    margin-left: 200px;
+    transition: margin-left 0.3s ease-in-out;
+
+    padding-left: 20px; 
+}
+.container p{
+    margin-left: 200px;
+    transition: margin-left 0.3s ease-in-out;
+
+    padding-left: 20px; 
+}
+.content .h1{
+    font-size: medium;
+}
+.contenta {
+    margin-left: 200px;
+    transition: margin-left 0.3s ease-in-out;
+
+    padding-left: 20px; 
+}
+
+.contenta .h1{
+    font-size: medium;
+}
+.sidebar a {
+    background-color: beige;
+    background-size: cover;
+    text-align: center;
+    transition: all 0.6s ease-in-out; /* Smooth transition */
+    display: block; /* Ensures links take full width of sidebar */
+    padding: 10px; /* Adjust padding as needed */
+    margin-bottom: 5px; /* Adjust margin as needed */
+}
+
+.sidebar a:hover {
+    font-size: larger;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.6s ease-in-out; /* Smooth transition */
+}
+
+.back1 {
+    background-color: aquamarine;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: calc(25% - 20px);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-content p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.availability {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.return button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.availability button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.availability-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.availability-btn:hover {
+    filter: brightness(90%);
+}
+
+.availability-btn.available {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.availability-btn.not-available {
+    background-color: #dc3545;
+    color: #fff;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute space between items */
+}
+
+.card {
+    width: 45%; /* Adjust the width to fit two cards per row with some spacing */
+    margin-bottom: 20px; /* Adjust spacing between rows */
+}
+
+/* Adjust card content for better alignment */
+.card-content {
+    text-align: center;
+}
+
+/*cdsc*/
+
+.cardward {
+    width: calc(25% - 20px);
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;    
+    transition: all 0.8s ease-in-out; /* Smooth transition */
+    width: 45%; /* Adjust the width to fit two cards per row with some spacing */
+    margin-bottom: 20px; /* Adjust spacing between rows */
+    color:white;
+    text-align: center;
+    padding-top: 130px;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+}
+
+.cardward:hover {
+    transform: translateY(-5px);
+    background-image: url('gward.jpeg');
+    transition:  all 0.8s ease-in-out; /* Smooth transition */
+    margin-bottom: 20px; /* Adjust spacing between rows */
+    color:black;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+.cardward img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #100f0f;
+}
+
+.cardward-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.cardward-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cardward-content p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+.availabilitypatient {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.availabilitypatient button {
+    padding: 10px 20px;
+    background-color: #04a327;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.availabilitypatient-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.availabilitypatient-btn:hover {
+    filter: brightness(90%);
+}
+
+.availabilitypatient-btn.Patient1 {
+    background-color: #04a327;
+    color: #fff;
+}
+
+.availabilitypatient-btn.Patient2 {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.cardward:hover .availabilitypatient-btn {
+    display: none;
+}
+.cardward .check-btn {
+    display: none;
+}
+.cardward:hover .check-btn {
+    display:inline-block;
+}
+/*dsd*/
+.check {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.check button {
+    padding: 10px 20px;
+
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.check-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.check-btn:hover {
+    filter: brightness(90%);
+}
